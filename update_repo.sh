@@ -44,6 +44,12 @@ echo ""
 echo -e "${CYAN}📝 Commit message: ${NC}\"$COMMIT_MSG\""
 echo ""
 
+# Remove cached files that should be ignored (LaTeX auxiliary files)
+echo -e "${YELLOW}🧹 Removing cached ignored files...${NC}"
+git rm -r --cached --quiet *.tex *.aux *.out *.toc *.log *.fls *.fdb_latexmk 2>/dev/null || true
+git rm -r --cached --quiet lectures/**/*.aux lectures/**/*.out lectures/**/*.toc lectures/**/*.log 2>/dev/null || true
+git rm -r --cached --quiet textbook/ 2>/dev/null || true
+
 # Add all changes
 echo -e "${YELLOW}➕ Adding changes...${NC}"
 git add .
