@@ -17,7 +17,7 @@ This week focuses on introducing the course, setting up required tools, and unde
 6. Tools and platforms overview
 
 ### Materials
-- 📊 Slides: `slides/SE446_W01_course_introduction.pdf`
+- 📊 Slides: [`SE446_W01_course_introduction.pdf`](slides/SE446_W01_course_introduction.pdf)
 
 ---
 
@@ -27,24 +27,36 @@ This week focuses on introducing the course, setting up required tools, and unde
 1. Semester project overview (Smart City Data Platform)
 2. 5 Milestones explained (M1-M5)
 3. Datasets we'll use
-4. GitHub setup and workflow
-5. Google Colab / Databricks introduction
-6. ExamGPT for in-class submissions
+4. Why traditional techniques fail at scale
+5. GitHub setup and workflow
+6. Google Colab / Databricks introduction
 7. Q&A and hands-on setup help
 
 ### Materials
-- 📊 Slides: `slides/SE446_W01B_project_and_tools_setup.pdf`
-- 📓 Notebook: `notebooks/SE446_Lab01_Dataset_Exploration.ipynb`
+- 📊 Slides: [`SE446_W01B_project_and_tools_setup.pdf`](slides/SE446_W01B_project_and_tools_setup.pdf)
+- 📓 Lab Notebook: [`SE446_Lab01_Dataset_Exploration.ipynb`](notebooks/SE446_Lab01_Dataset_Exploration.ipynb)
 
 ### Lab: Dataset Exploration
 Open in Google Colab and work through the notebook to:
 - Explore all 4 course datasets with Pandas
 - Complete fill-in-the-blank exercises
 - See why traditional techniques fail at Big Data scale
+- Reference the Pandas Cheatsheet at the end
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aniskoubaa/big_data_course/blob/main/lectures/week01/notebooks/SE446_Lab01_Dataset_Exploration.ipynb)
 
-### Setup Tasks (in-class)
+---
+
+## Quizzes & Assessments
+
+| Format | File | Purpose |
+|--------|------|---------|
+| ExamGPT (JSON) | [`SE446_W01_quiz.json`](quizzes/SE446_W01_quiz.json) | In-class ExamGPT submission |
+| Moodle (XML) | [`SE446_W01_quiz.xml`](quizzes/SE446_W01_quiz.xml) | Moodle LMS import |
+
+---
+
+## Setup Tasks (in-class)
 - [ ] Create GitHub account
 - [ ] Create Google Colab account
 - [ ] Join the course GitHub organization
@@ -54,12 +66,17 @@ Open in Google Colab and work through the notebook to:
 
 ## Pre-Class Preparation
 
-Before Session 1A:
+### Before Session 1A:
 - **None required** — just bring yourself!
 
-Before Session 1B:
+### Before Session 1B:
 - Create a GitHub account at [github.com](https://github.com) (if you don't have one)
 - Create a Google account for Colab access
+
+### Before Week 2:
+Watch these introductory videos (~20 min total):
+- 🎥 [What is Big Data? - Simplilearn](https://www.youtube.com/watch?v=bAyrObl7TYE) (8 min)
+- 🎥 [Big Data In 5 Minutes - Simplilearn](https://www.youtube.com/watch?v=TzxmjbL-i4Y) (5 min)
 
 ---
 
@@ -78,13 +95,13 @@ Before Session 1B:
 
 - 📧 Instructor: Prof. Anis Koubaa (akoubaa@alfaisal.edu)
 - 🌐 Course Website: [aniskoubaa.org/se446](https://aniskoubaa.org/se446)
-- 📁 GitHub Organization: (Will be provided in class)
+- 📁 GitHub Repository: [github.com/aniskoubaa/big_data_course](https://github.com/aniskoubaa/big_data_course)
 
 ---
 
 ## Homework for Week 2
 
 1. Complete all tool setups (GitHub, Google Colab)
-2. Watch the pre-class video for Week 2A:
-   - "What is Big Data?" - Simplilearn (~15 min)
+2. Watch the pre-class videos listed above
 3. Review the course syllabus
+

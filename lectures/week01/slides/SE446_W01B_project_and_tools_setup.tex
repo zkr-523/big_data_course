@@ -769,6 +769,91 @@ counts.writeStream \
 \end{frame}
 
 % ===========================================
+\section{Why Big Data Tools?}
+% ===========================================
+
+\begin{frame}{Why Can't We Just Use Python/Pandas?}
+  \begin{block}{\faIcon{exclamation-triangle} The Problem with Traditional Approaches}
+    Our Lab 01 notebook demonstrates fundamental limitations when scaling to real data.
+  \end{block}
+  
+  \vspace{0.3em}
+  
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{1. Algorithmic Complexity}
+      \begin{itemize}
+        \item O(n²) nested loops
+        \item 50 records → 2,500 comparisons
+        \item 1M records → \textcolor{red}{\textbf{1 trillion!}}
+        \item Estimated time: \textcolor{red}{\textbf{34+ hours}}
+      \end{itemize}
+      
+      \vspace{0.3em}
+      
+      \textbf{2. Memory Limits}
+      \begin{itemize}
+        \item 50 records → 17 KB RAM
+        \item 100M records → \textcolor{red}{\textbf{33 GB RAM}}
+        \item Your laptop: 8-16 GB
+      \end{itemize}
+    \end{column}
+    
+    \begin{column}{0.48\textwidth}
+      \textbf{3. Single-Threaded Processing}
+      \begin{itemize}
+        \item Pandas uses 1 CPU core
+        \item Modern servers: 64+ cores idle
+        \item 100M records: 51 seconds
+        \item With Spark: \textcolor{green!60!black}{\textbf{0.5 sec}}
+      \end{itemize}
+      
+      \vspace{0.3em}
+      
+      \textbf{4. No Fault Tolerance}
+      \begin{itemize}
+        \item Crash = start over
+        \item No automatic recovery
+        \item Days of work lost
+      \end{itemize}
+    \end{column}
+  \end{columns}
+  
+  \vspace{0.3em}
+  
+  \centering
+  \small\textit{Try it yourself in Lab 01 notebook!}
+\end{frame}
+
+\begin{frame}{Big Data Tools Solve These Problems \faIcon{check-circle}}
+  \centering
+  \small
+  \begin{tabular}{p{2.8cm}p{2.8cm}p{5.5cm}}
+    \toprule
+    \textbf{Problem} & \textbf{Traditional} & \textbf{Big Data Solution} \\
+    \midrule
+    \faIcon{hourglass-half} O(n²) Complexity & \textcolor{red}{Hours/Days} & \textbf{MapReduce:} Parallelize across 100+ nodes \\
+    \addlinespace
+    \faIcon{memory} Memory Limits & \textcolor{red}{Can't load} & \textbf{HDFS:} Distribute storage across cluster \\
+    \addlinespace
+    \faIcon{microchip} Single CPU & \textcolor{red}{Wastes 63 cores} & \textbf{Spark:} Use all cores on all machines \\
+    \addlinespace
+    \faIcon{bolt} No Recovery & \textcolor{red}{Start over} & \textbf{Hadoop:} Auto-recover from failures \\
+    \bottomrule
+  \end{tabular}
+  
+  \vspace{0.8em}
+  
+  \begin{block}{\faIcon{lightbulb} Key Insight}
+    The same Pandas-like code runs on \textbf{Spark/Databricks}—the infrastructure handles scaling!
+  \end{block}
+  
+  \vspace{0.3em}
+  
+  \small\textit{This is why we learn Hadoop, MapReduce, Hive, and Spark in this course.}
+\end{frame}
+
+% ===========================================
 \section{Datasets Overview}
 % ===========================================
 
