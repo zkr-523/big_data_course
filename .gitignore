@@ -23,6 +23,7 @@ quizzes/
 !data/*.csv
 !data/*.json
 
+*.xml
 *.tex
 *.aux
 *.out
